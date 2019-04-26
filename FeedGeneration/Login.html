@@ -1,0 +1,105 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<title>Login</title>
+<link rel="icon" href="icon.jpg">
+<style type="text/css">
+
+body 
+{
+background-image: url('greybkgrnd.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+color: black;
+font-family: Arial;
+line-height: 1.7em;
+margin: 0% 0% 0% 0%;
+}
+
+h1
+{
+	text-align: center;
+	font-family: serif;
+	font-size: 50px;
+	margin-bottom: 10px;
+	margin-top: 5%;
+} 
+
+p {
+margin-bottom: 10px;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 5% auto;
+width: 500px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: white;
+border-style: solid;
+color: #848484;
+font-family:Arial;
+font-size: 15px;
+height: 50px;
+padding: 0px 10px;
+width: 400px;
+margin-left:35px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] , input[type="reset"] {
+background-color: #0f408e;
+border-style: groove;
+color: white;
+border-color:#dcdcdc;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+margin-left:35px;
+margin-top:10px;
+width: 400px;
+-webkit-appearance:none;
+}
+.image
+{
+	position: relative;
+}
+.image .text
+{
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+footer
+{
+	margin-top: 40px;
+	text-align:center;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+</style>
+</head>
+<body>
+	<div class="text"><!--<p><h1 style="font-size:40px;color:#000080">Collector Office</h1></p>-->
+		<center><h1 style="font-size:30px;color:#000080">Register</h1></center>
+	</div>
+<div id="login">
+<!--h1>Collector Login</h1-->
+<form action="CollectorLogin.php" method="post" >
+<fieldset >
+<p><input type="text" placeholder="User Name" name="CollectorID"></p>
+<p><input type="password" placeholder="Password" name="Password" ></p>
+<p><input type="submit" value="Register" ></p>
+<p><input type="reset" value="Reset"></p>
+</fieldset>
+</form>
+<!--footer>Copyright &copy; Team Cipher</footer-->
+</div> <!-- end login -->
+
+</body>
+</html>
